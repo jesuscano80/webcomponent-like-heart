@@ -25,7 +25,7 @@ export class HeartComp extends LitElement {
 }
       h4{
         border-radius:45px;
-        background-color: rgb(1,1,1,0.1);
+        background-color: var(--heart-comp-text-back,rgb(1,1,1,0.1));
         width: fit-content;
         color: white;
         padding:5px;
@@ -41,8 +41,6 @@ export class HeartComp extends LitElement {
 
   static get properties() {
     return {
-      title: { type: String },
-      counter: { type: Number },
       visibility: { type: Boolean}
     };
   }
@@ -55,7 +53,7 @@ export class HeartComp extends LitElement {
       this.shadowRoot.querySelector("h2").style.visibility="hidden"
       this.shadowRoot.querySelector("h4").textContent="Like?"
       this.shadowRoot.querySelector("h2").style.display="block";
-      this.shadowRoot.querySelector("h4").style.backgroundColor= "rgb(1,1,1,0.1)";
+      this.shadowRoot.querySelector("h4").style.backgroundColor= "var(--heart-comp-text-back,rgb(1,1,1,0.1))";
 
       this.visibility=true;
     }
@@ -63,7 +61,7 @@ export class HeartComp extends LitElement {
       this.shadowRoot.querySelector("h2").style.display="block";
       this.shadowRoot.querySelector("h2").style.visibility="visible";
       this.shadowRoot.querySelector("h4").textContent="Like!"
-      this.shadowRoot.querySelector("h4").style.backgroundColor="#B22222";
+      this.shadowRoot.querySelector("h4").style.backgroundColor="var(--heart-comp-like-back,#B22222)";
       
       this.visibility=false;
 

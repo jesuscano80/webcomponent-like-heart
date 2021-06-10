@@ -6,28 +6,15 @@
       "path": "./heart-comp.js",
       "attributes": [
         {
-          "name": "title",
-          "type": "string",
-          "default": "\"Hey there\""
-        },
-        {
-          "name": "counter",
-          "type": "number",
-          "default": "5"
+          "name": "visibility",
+          "type": "boolean"
         }
       ],
       "properties": [
         {
-          "name": "title",
-          "attribute": "title",
-          "type": "string",
-          "default": "\"Hey there\""
-        },
-        {
-          "name": "counter",
-          "attribute": "counter",
-          "type": "number",
-          "default": "5"
+          "name": "visibility",
+          "attribute": "visibility",
+          "type": "boolean"
         }
       ]
     }

@@ -6,7 +6,12 @@ This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) reco
 ```bash
 npm i heart-comp
 ```
-
+## CSS variables
+```css
+var(--heart-comp-text-color) to change font color
+var(--heart-comp-text-back) to change like text background
+var(--heart-comp-like-back) to change background when like is on
+```
 ## Usage
 ```html
 <script type="module">
