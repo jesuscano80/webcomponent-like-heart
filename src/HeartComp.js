@@ -5,7 +5,7 @@ export class HeartComp extends LitElement {
     return css`
       :host {
         display: block;
-        padding: 25px;
+        padding: 5px;
         color: var(--heart-comp-text-color, #000);
       }
       h2{
