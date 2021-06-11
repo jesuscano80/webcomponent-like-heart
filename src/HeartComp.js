@@ -17,10 +17,12 @@ export class HeartComp extends LitElement {
       @keyframes corazon {
  from{
    transform:translateY(0);
+   opacity:0.1;
 
  }
  to{
   transform:translateY(-40px);
+  opacity:1;
  }
 }
       h4{
